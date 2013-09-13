@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EnglishConnect</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />    
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>    
+    </head>
+    <body>      
+        <script type="text/javascript">
+            document.addEventListener("deviceready", onDeviceReady, false);
+            // device APIs are available
+		    //
+		    function onDeviceReady() {
+		        $("#test").html('It works.');
+		    }
+        </script>
+        <div data-role="page">
+
+			<div data-role="header">
+				<h1>Page Title</h1>
+			</div><!-- /header -->
+		
+			<div data-role="content">
+				<h1>English Connect</h1>
+				<p>Page content goes here. Eclipse</p>
+				<div id="test"> </div>
+			</div><!-- /content -->
+		
+			<div data-role="footer" data-position="fixed">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+			
+		</div><!-- /page -->
+    </body>
+</html>
